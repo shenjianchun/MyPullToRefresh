@@ -13,7 +13,7 @@ import android.widget.TextView;
  * @author Li Hong
  * @since 2013-7-30
  */
-public class FooterLoadingLayout extends LoadingLayout {
+public class CustomFooterLoadingLayout extends LoadingLayout {
     /**
      * 进度条
      */
@@ -22,24 +22,24 @@ public class FooterLoadingLayout extends LoadingLayout {
      *  显示的文本
      */
     private TextView mHintView;
-    
+
     /**
      * 构造方法
-     * 
+     *
      * @param context context
      */
-    public FooterLoadingLayout(Context context) {
+    public CustomFooterLoadingLayout(Context context) {
         super(context);
         init(context);
     }
 
     /**
      * 构造方法
-     * 
+     *
      * @param context context
      * @param attrs attrs
      */
-    public FooterLoadingLayout(Context context, AttributeSet attrs) {
+    public CustomFooterLoadingLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
@@ -57,7 +57,7 @@ public class FooterLoadingLayout extends LoadingLayout {
     
     @Override
     protected View createLoadingView(Context context, AttributeSet attrs) {
-        View container = LayoutInflater.from(context).inflate(R.layout.pull_to_load_footer, null);
+        View container = LayoutInflater.from(context).inflate(R.layout.custom_pull_to_load_footer, null);
         return container;
     }
 

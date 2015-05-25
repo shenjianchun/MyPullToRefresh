@@ -502,7 +502,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
      * @return LoadingLayout对象
      */
     protected LoadingLayout createFooterLoadingLayout(Context context, AttributeSet attrs) {
-        return new FooterLoadingLayout(context);
+        return new CustomFooterLoadingLayout(context);
     }
     
     /**

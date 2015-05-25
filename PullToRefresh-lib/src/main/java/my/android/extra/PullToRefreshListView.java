@@ -131,7 +131,7 @@ public class PullToRefreshListView extends PullToRefreshBase<ListView> implement
         if (scrollLoadEnabled) {
             // 设置Footer
             if (null == mLoadMoreFooterLayout) {
-                mLoadMoreFooterLayout = new FooterLoadingLayout(getContext());
+                mLoadMoreFooterLayout = new CustomFooterLoadingLayout(getContext());
             }
             
             if (null == mLoadMoreFooterLayout.getParent()) {
