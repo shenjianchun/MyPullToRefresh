@@ -104,7 +104,7 @@ public class HeaderLoadingLayout extends LoadingLayout {
 
     @Override
     protected View createLoadingView(Context context, AttributeSet attrs) {
-        View container = LayoutInflater.from(context).inflate(R.layout.pull_to_refresh_header, null);
+        View container = LayoutInflater.from(context).inflate(R.layout.pull_to_refresh_header, this, true);
         return container;
     }
 

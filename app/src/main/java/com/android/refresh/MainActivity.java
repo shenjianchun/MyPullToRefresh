@@ -1,5 +1,6 @@
 package com.android.refresh;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.ActionBarActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends ActionBarActivity {
         mRefreshView = (PullToRefreshListView) findViewById(R.id.list);
         mRefreshView.getRefreshableView().setAdapter(mAdapter);
         mRefreshView.setPullRefreshEnabled(true);
+//        mRefreshView.setScrollLoadEnabled(true);
         mRefreshView.setPullLoadEnabled(true);
         mRefreshView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
             @Override
@@ -62,6 +64,11 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            Intent intent = new Intent(this, RecyclerViewRefreshActivity.class);
+            startActivity(intent);
+
+
             return true;
         }
 

@@ -11,10 +11,10 @@ import android.widget.RelativeLayout;
 
 
 /**
- * 这个类封装了下拉刷新的布局
- * 
- * @author Li Hong
- * @since 2013-7-30
+ * 这个类封装了下拉刷新的布局，基于网易的进度条
+ *
+ * @author JC
+ * @since 2015-5-26
  */
 public class CustomRotateLoadingLayout extends LoadingLayout {
 
@@ -61,7 +61,7 @@ public class CustomRotateLoadingLayout extends LoadingLayout {
     
     @Override
     protected View createLoadingView(Context context, AttributeSet attrs) {
-        View container = LayoutInflater.from(context).inflate(R.layout.custom_pull_to_refresh_header, null);
+        View container = LayoutInflater.from(context).inflate(R.layout.custom_pull_to_refresh_header, this, true);
         return container;
     }
 

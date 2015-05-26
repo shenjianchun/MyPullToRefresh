@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 
 /**
- * 这个类封装了下拉刷新的布局 * 
- * @author Li Hong
- * @since 2013-7-30
+ * 这个类封装了上拉或滚动加载更多的布局，基于网易的进度条
+ * @author JC
+ * @since 2015-5-26
  */
 public class CustomFooterLoadingLayout extends LoadingLayout {
     /**
@@ -57,7 +57,7 @@ public class CustomFooterLoadingLayout extends LoadingLayout {
     
     @Override
     protected View createLoadingView(Context context, AttributeSet attrs) {
-        View container = LayoutInflater.from(context).inflate(R.layout.custom_pull_to_load_footer, null);
+        View container = LayoutInflater.from(context).inflate(R.layout.custom_pull_to_load_footer, this, true);
         return container;
     }
 

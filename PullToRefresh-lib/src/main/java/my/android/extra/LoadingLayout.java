@@ -66,10 +66,8 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
             throw new NullPointerException("Loading view can not be null.");
         }
         // 配置布局
-        LayoutParams params = new LayoutParams(
-                LayoutParams.MATCH_PARENT, 
-                LayoutParams.WRAP_CONTENT);
-        addView(mContainer, params);
+//        addView(mContainer);
+//        addView(mContainer, params);
     }
 
     /**

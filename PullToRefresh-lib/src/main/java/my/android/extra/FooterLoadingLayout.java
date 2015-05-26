@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 
 /**
- * 这个类封装了下拉刷新的布局 * 
+ * 这个类封装了加载更多的布局 *
  * @author Li Hong
  * @since 2013-7-30
  */
@@ -57,7 +57,7 @@ public class FooterLoadingLayout extends LoadingLayout {
     
     @Override
     protected View createLoadingView(Context context, AttributeSet attrs) {
-        View container = LayoutInflater.from(context).inflate(R.layout.pull_to_load_footer, null);
+        View container = LayoutInflater.from(context).inflate(R.layout.pull_to_load_footer, this, true);
         return container;
     }
 
